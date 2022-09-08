@@ -1,5 +1,86 @@
+.hero {
+  background-image: url(./assets/Group-25.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.8rem 6rem;
+  height: 935px;
+}
+.hero .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .header .nav {
+  cursor: pointer;
+}
+.hero .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8.2rem 0;
+}
+.hero .banner .slogan {
+  width: 40%;
+}
+.hero .banner .slogan__title {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.hero .banner .slogan__btn {
+  display: block;
+  min-width: 164px;
+  min-height: 56px;
+  padding: 30px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s all;
+  position: relative;
+  background: white;
+}
+.hero .banner .slogan__btn .block-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero .banner .slogan__btn .block-btn .text-btn {
+  background: linear-gradient(to right, #FF6800, #FF1F00);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+}
+.hero .banner .slogan__btn:hover {
+  background: linear-gradient(to left, #3dd61e, #00ffb3);
+}
+.hero .banner .slogan__btn:hover .text-btn {
+  background: white;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.feature {
+  margin: 3.6rem 6rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.linear-gradient {
+  background-image: linear-gradient(to right, #FF6800, #FF1F00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }/*# sourceMappingURL=style.css.map */

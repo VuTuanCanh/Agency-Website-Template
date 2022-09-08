@@ -11,13 +11,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="hero">
         <div class="header">
             <div class="logo">
-                <img src="./assets/Logo.png" alt="Agency Website">
+                <a href="#"><img src="./assets/Logo.png" alt="Agency Website"></a>
             </div>
             <div class="nav">
                 <img src="./assets/bar.png" alt="bar">
@@ -26,14 +31,43 @@
         <div class="banner">
             <div class="slogan">
                 <h1 class="slogan__title">Digital Marketing Agency</h1>
-                <button class="slogan__btn">Button</button>
+                <button class="slogan__btn">
+                    <div class="block-btn">
+                        <p class="text-btn">Button</p>
+                    </div>
+                </button>
             </div>
             <div class="mask-group">
-                <img src="./assets/Mask group.png" alt="Mask group">
+                <img src="./assets/Mask-group.png" alt="Mask group">
             </div>
         </div>
     </div>
-    <div class="feature"></div>
+    <div class="feature">
+        <div class="headline">
+            <p class="title">What We Can Do</p>
+            <p class="desc">Excepteur sint occaecat cupidatat non proident</p>
+        </div>
+        <div class="item-list">
+            <div class="item">
+                <img src="./assets/Icon1.png" alt="Web Development">
+                <p class="item-name">Web Development</p>
+                <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium.</p>
+            </div>
+            <div class="item">
+                <img src="./assets/Icon2.png" alt="Search Engine Optimization">
+                <p class="item-name">Search Engine Optimization</p>
+                <p class="desc">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla
+                    facilisi nullam vehicula ipsum.</p>
+            </div>
+            <div class="item">
+                <img src="./assets/Icon3.png" alt="Web Design">
+                <p class="item-name">Web Design</p>
+                <p class="desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper
+                    nulla non metus.</p>
+            </div>
+        </div>
+    </div>
     <div class="video-player"></div>
     <div class="testimonials"></div>
     <div class="skill-bars"></div>

@@ -1,17 +1,20 @@
-$white: #ffff;
-$black: #0000;
-$bgr-skill-bars: #FFE0CB;
-$linear-gradient-color: linear-gradient(to right, #FF6800, #FF1F00);
-$sub-title: #999999;
-$sub-title-item: #808080;
-$avatar-desc: #666666;
-$sub-title-skill-bars: #CCCCCC;
-$bgr-footer: #333333;
-
-
+@import "variables";
+@import "hero";
+@import "_feature";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.linear-gradient {
+    background-image: $linear-gradient-color;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

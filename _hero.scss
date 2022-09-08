@@ -1,0 +1,63 @@
+.hero {
+    background-image: url(./assets/Group-25.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.8rem 6rem;
+    height: 935px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav {
+            cursor: pointer;
+        }
+    }
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8.2rem 0;
+        .slogan {
+            width: 40%;
+            &__title {
+                font-size: 48px;
+                color: $white;
+                margin-bottom: 1.5rem;
+            }
+            &__btn {
+                display: block;
+                min-width: 164px;
+                min-height: 56px;
+                padding: 30px;
+                outline: none;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: 0.5s all;
+                position: relative;
+                background: white;
+                .block-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    .text-btn {
+                        background: $linear-gradient-color;
+                        background-clip: text;
+                        color: transparent;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
+                &:hover {
+                    background: linear-gradient(to left, #3dd61e, #00ffb3);
+                    .text-btn {
+                        background: $white;
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
