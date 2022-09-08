@@ -16,6 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
 </head>
 
 <body>
@@ -49,31 +51,137 @@
         </div>
         <div class="item-list">
             <div class="item">
-                <img src="./assets/Icon1.png" alt="Web Development">
+                <div class="icon">
+                    <img src="./assets/Icon1.png" alt="Web Development">
+                </div>
                 <p class="item-name">Web Development</p>
                 <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                     laudantium.</p>
             </div>
             <div class="item">
-                <img src="./assets/Icon2.png" alt="Search Engine Optimization">
+                <div class="icon">
+                    <img src="./assets/Icon2.png" alt="Search Engine Optimization">
+                </div>
                 <p class="item-name">Search Engine Optimization</p>
                 <p class="desc">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla
                     facilisi nullam vehicula ipsum.</p>
             </div>
             <div class="item">
-                <img src="./assets/Icon3.png" alt="Web Design">
+                <div class="icon">
+                    <img src="./assets/Icon3.png" alt="Web Design">
+                </div>
                 <p class="item-name">Web Design</p>
                 <p class="desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper
                     nulla non metus.</p>
             </div>
         </div>
     </div>
-    <div class="video-player"></div>
-    <div class="testimonials"></div>
+    <div class="video-player">
+        <div class="fake-video">
+            <img src="./assets/fake-video.png" alt="fake video">
+        </div>
+        <button class="btn-play">
+            <i class="fa-solid fa-play"></i>
+        </button>
+    </div>
+    <div class="testimonials">
+        <div class="headline">
+            <p class="title">Testimonials</p>
+            <p class="desc">Excepteur sint occaecat cupidatat non proident</p>
+        </div>
+        <div class="qoute-list">
+            <div class="item">
+                <div class="quote">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed
+                    consectetur.</div>
+                <div class="person">
+                    <div class="avatar">
+                        <img src="./assets/Avatar1.png" alt="avatar">
+                    </div>
+                    <div class="info">
+                        <div class="name">Dianne Russell</div>
+                        <div class="profession">Marketing Coordinator</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="quote">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium.</div>
+                <div class="person">
+                    <div class="avatar">
+                        <img src="./assets/Avatar2.png" alt="avatar">
+                    </div>
+                    <div class="info">
+                        <div class="name">Robert Johnson</div>
+                        <div class="profession">Graphic Designer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="quote">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac
+                    consectetur ac, vestibulum at eros.</div>
+                <div class="person">
+                    <div class="avatar">
+                        <img src="./assets/Avatar3.png" alt="avatar">
+                    </div>
+                    <div class="info">
+                        <div class="name">Floyd Miles</div>
+                        <div class="profession">President of Sales</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="quote">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac
+                    consectetur ac, vestibulum at eros.</div>
+                <div class="person">
+                    <div class="avatar">
+                        <img src="./assets/Avatar1.png" alt="avatar">
+                    </div>
+                    <div class="info">
+                        <div class="name">Adele</div>
+                        <div class="profession">photographer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="quote">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac
+                    consectetur ac, vestibulum at eros.</div>
+                <div class="person">
+                    <div class="avatar">
+                        <img src="./assets/Avatar2.png" alt="avatar">
+                    </div>
+                    <div class="info">
+                        <div class="name">Gemma</div>
+                        <div class="profession">editor</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="quote">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac
+                    consectetur ac, vestibulum at eros.</div>
+                <div class="person">
+                    <div class="avatar">
+                        <img src="./assets/Avatar3.png" alt="avatar">
+                    </div>
+                    <div class="info">
+                        <div class="name">Alex</div>
+                        <div class="profession">graphic designer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="skill-bars"></div>
     <div class="FAQ"></div>
     <div class="contact"></div>
     <div class="footer"></div>
+
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script src="./testimonials-carousel.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+.testimonials {
+    margin: 3.6rem 6rem;
+    .headline {
+        text-align: center;
+        margin-bottom: 2rem;
+        .title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .desc {
+            font-weight: 400;
+            font-size: 14px;
+            color: $sub-title;
+        }
+    }
+    .qoute-list {
+        display: flex;
+        // justify-content: space-between;
+        .item {
+            text-align: center;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px 0px #cecbcb;
+        }
+    }
+}

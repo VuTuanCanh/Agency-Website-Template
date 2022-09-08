@@ -67,6 +67,120 @@
 .feature {
   margin: 3.6rem 6rem;
 }
+.feature .headline {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.feature .headline .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.feature .headline .desc {
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+}
+.feature .item-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.feature .item-list .item {
+  text-align: center;
+  padding: 2.5rem;
+  background: #fafafa;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px 0px #cecbcb;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
+}
+.feature .item-list .item .icon {
+  margin-bottom: 24px;
+}
+.feature .item-list .item .item-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.feature .item-list .item .desc {
+  font-weight: 400;
+  font-size: 14px;
+  color: #808080;
+}
+.feature .item-list .item:hover {
+  transform: scale(1.1);
+}
+
+.video-player {
+  position: relative;
+}
+.video-player .fake-video {
+  position: relative;
+  z-index: 1;
+}
+.video-player .fake-video img {
+  width: 100%;
+  height: 100%;
+}
+.video-player .fake-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #FF6800, #FF1F00);
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+.video-player .btn-play {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.video-player .btn-play i {
+  background: linear-gradient(to right, #FF6800, #FF1F00);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 16px;
+  padding: 13px 16px;
+}
+
+.testimonials {
+  margin: 3.6rem 6rem;
+}
+.testimonials .headline {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.testimonials .headline .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.testimonials .headline .desc {
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+}
+.testimonials .qoute-list {
+  display: flex;
+}
+.testimonials .qoute-list .item {
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px 0px #cecbcb;
+}
 
 * {
   margin: 0;

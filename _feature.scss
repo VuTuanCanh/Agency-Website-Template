@@ -1,3 +1,47 @@
 .feature {
     margin: 3.6rem 6rem;
+    .headline {
+        text-align: center;
+        margin-bottom: 2rem;
+        .title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .desc {
+            font-weight: 400;
+            font-size: 14px;
+            color: $sub-title;
+        }
+    }
+    .item-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        .item {
+            text-align: center;
+            padding: 2.5rem;
+            background: #fafafa;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px 0px #cecbcb;
+            transition: 0.6s ease-in-out;
+            cursor: pointer;
+            .icon {
+                margin-bottom: 24px;
+            }
+            .item-name {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+            .desc {
+                font-weight: 400;
+                font-size: 14px;
+                color: $sub-title-item;
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
 }
