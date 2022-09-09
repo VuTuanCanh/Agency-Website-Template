@@ -160,7 +160,7 @@
 }
 .testimonials .headline {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .testimonials .headline .title {
   font-size: 32px;
@@ -178,10 +178,82 @@
 .testimonials .qoute-list .item {
   text-align: center;
   padding: 2.5rem;
+  margin: 20px;
   border-radius: 15px;
   box-shadow: 0px 10px 20px 0px #cecbcb;
+  position: relative;
+  background-clip: padding-box;
+  border: 2px solid linear-gradient(to right, #FF6800, #FF1F00);
+  background: white;
+}
+.testimonials .qoute-list .item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background-image: linear-gradient(to right, #FF6800, #FF1F00);
+}
+.testimonials .qoute-list .item .quote {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.testimonials .qoute-list .item .person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.testimonials .qoute-list .item .person .avatar {
+  margin-right: 12px;
+}
+.testimonials .qoute-list .item .person .info .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+.testimonials .qoute-list .item .person .info .profession {
+  font-size: 10px;
+  font-weight: 300;
+  color: #666666;
+}
+.testimonials .qoute-list .slick-dots li.slick-active button:before {
+  font-size: 16px;
+  color: #ff1f00;
 }
 
+.skill-bars {
+  background-image: url(./assets/Bgr-Skill-Bars.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.skill-bars .skill-bars-block {
+  margin: 0 3.6rem;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.skill-bars .skill-bars-block .content {
+  margin: 3rem 0;
+}
+.skill-bars .skill-bars-block .content .title {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+.skill-bars .skill-bars-block .content .desc {
+  font-weight: 400;
+  font-size: 14px;
+  color: #CCCCCC;
+}
+.skill-bars .skill-bars-block .content .bar-list .item .completion-progress {
+  font-size: 14px;
+  font-weight: 400;
+  color: #CCCCCC;
+}
 * {
   margin: 0;
   padding: 0;

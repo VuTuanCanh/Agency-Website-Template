@@ -1,0 +1,35 @@
+.skill-bars {
+    background-image: url(./assets/Bgr-Skill-Bars.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .skill-bars-block {
+        margin: 0 3.6rem;
+        padding: 3rem 0;
+        display: flex;
+        justify-content: space-between;
+        .content {
+            margin: 3rem 0;
+            .title {
+                font-size: 32px;
+                font-weight: 600;
+                color: $white;
+            }
+            .desc {
+                font-weight: 400;
+                font-size: 14px;
+                color: $sub-title-skill-bars;
+            }
+            .bar-list {
+                .item {
+                    .completion-progress {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $sub-title-skill-bars;
+                    }
+                    .chart {
+                    }
+                }
+            }
+        }
+    }
+}
