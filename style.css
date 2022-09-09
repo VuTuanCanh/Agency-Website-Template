@@ -229,31 +229,190 @@
   background-image: url(./assets/Bgr-Skill-Bars.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
 }
 .skill-bars .skill-bars-block {
   margin: 0 3.6rem;
   padding: 3rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.skill-bars .skill-bars-block .banner {
+  width: 50%;
+}
+.skill-bars .skill-bars-block .banner img {
+  width: 100%;
 }
 .skill-bars .skill-bars-block .content {
-  margin: 3rem 0;
+  width: 40%;
 }
 .skill-bars .skill-bars-block .content .title {
   font-size: 32px;
   font-weight: 600;
   color: white;
+  margin-bottom: 10px;
 }
 .skill-bars .skill-bars-block .content .desc {
   font-weight: 400;
   font-size: 14px;
   color: #CCCCCC;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+.skill-bars .skill-bars-block .content .bar-list .item {
+  margin-bottom: 1rem;
 }
 .skill-bars .skill-bars-block .content .bar-list .item .completion-progress {
   font-size: 14px;
   font-weight: 400;
   color: #CCCCCC;
+  margin-bottom: 0.5rem;
 }
+.skill-bars .skill-bars-block .content .bar-list .item .chart {
+  position: relative;
+  max-width: 380px;
+  height: 8px;
+  border-radius: 10px;
+  background: white;
+}
+.skill-bars .skill-bars-block .content .bar-list .item .chart .chart1 {
+  position: absolute;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(to right, #FF6800, #FF1F00);
+  border-radius: 10px;
+}
+.skill-bars .skill-bars-block .content .bar-list .item .chart .chart2 {
+  position: absolute;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(to right, #FF6800, #FF1F00);
+  border-radius: 10px;
+}
+.skill-bars .skill-bars-block .content .bar-list .item .chart .chart3 {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #FF6800, #FF1F00);
+  border-radius: 10px;
+}
+
+.FAQ .FAQ-block {
+  margin: 0 3.6rem;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.FAQ .FAQ-block .banner {
+  width: 50%;
+  order: 2;
+}
+.FAQ .FAQ-block .banner img {
+  width: 100%;
+}
+.FAQ .FAQ-block .content {
+  order: 1;
+  width: 40%;
+}
+.FAQ .FAQ-block .content .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.FAQ .FAQ-block .content .desc {
+  font-weight: 400;
+  font-size: 14px;
+  color: #CCCCCC;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+.action {
+  position: relative;
+}
+.action .bgr-img {
+  position: relative;
+}
+.action .bgr-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #FF6800, #FF1F00);
+  opacity: 0.8;
+}
+.action .bgr-img img {
+  width: 100%;
+}
+.action .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.action .content .title {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+.action .content .contact__btn {
+  display: block;
+  min-width: 164px;
+  min-height: 56px;
+  padding: 30px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s all;
+  position: relative;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.action .content .contact__btn .block-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.action .content .contact__btn .block-btn .text-btn {
+  background: linear-gradient(to right, #FF6800, #FF1F00);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+}
+.action .content .contact__btn:hover {
+  background: linear-gradient(to left, #3dd61e, #00ffb3);
+}
+.action .content .contact__btn:hover .text-btn {
+  background: white;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.footer {
+  background: #333333;
+}
+.footer .copy-right {
+  padding: 2.5rem 0;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;

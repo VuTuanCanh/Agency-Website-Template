@@ -2,31 +2,73 @@
     background-image: url(./assets/Bgr-Skill-Bars.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
     .skill-bars-block {
         margin: 0 3.6rem;
         padding: 3rem 0;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        .banner {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
         .content {
-            margin: 3rem 0;
+            width: 40%;
             .title {
                 font-size: 32px;
                 font-weight: 600;
                 color: $white;
+                margin-bottom: 10px;
             }
             .desc {
                 font-weight: 400;
                 font-size: 14px;
                 color: $sub-title-skill-bars;
+                max-width: 480px;
+                margin-bottom: 2rem;
             }
             .bar-list {
                 .item {
+                    margin-bottom: 1rem;
                     .completion-progress {
                         font-size: 14px;
                         font-weight: 400;
                         color: $sub-title-skill-bars;
+                        margin-bottom: 0.5rem;
                     }
                     .chart {
+                        position: relative;
+                        max-width: 380px;
+                        height: 8px;
+                        border-radius: 10px;
+                        background: $white;
+                        .chart1 {
+                            position: absolute;
+                            left: 0;
+                            width: 75%;
+                            height: 100%;
+                            background: $linear-gradient-color;
+                            border-radius: 10px;
+                        }
+                        .chart2 {
+                            position: absolute;
+                            left: 0;
+                            width: 90%;
+                            height: 100%;
+                            background: $linear-gradient-color;
+                            border-radius: 10px;
+                        }
+                        .chart3 {
+                            position: absolute;
+                            left: 0;
+                            width: 50%;
+                            height: 100%;
+                            background: $linear-gradient-color;
+                            border-radius: 10px;
+                        }
                     }
                 }
             }
