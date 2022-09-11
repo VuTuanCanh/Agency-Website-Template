@@ -1,21 +1,21 @@
 .action {
     position: relative;
-    .bgr-img {
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: $linear-gradient-color;
-            opacity: 0.8;
-        }
-        img {
-            width: 100%;
-        }
+    background-image: url(./assets/Call-to-Action.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 421px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $linear-gradient-color;
+        opacity: 0.8;
     }
+
     .content {
         position: absolute;
         top: 50%;
