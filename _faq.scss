@@ -34,21 +34,73 @@
                     margin-bottom: 12px;
                     padding: 1rem;
                     border-radius: 15px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 500;
                     .question {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                        position: relative;
                         color: $white;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            width: 14px;
+                            height: 2px;
+                            background: $white;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 14px;
+                            height: 2px;
+                            background: $white;
+                            right: 10px;
+                            top: 45%;
+                            transform: rotate(90deg);
+                        }
                     }
                     .answer {
                         display: none;
                     }
                 }
+                .show {
+                    margin: 2px 2px 20px 2px;
+                    border-radius: 15px;
+                    position: relative;
+                    background-clip: padding-box;
+                    border: 2px solid $linear-gradient-color;
+                    background: $white;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        z-index: -1;
+                        margin: -2px;
+                        border-radius: inherit;
+                        background-image: $linear-gradient-color;
+                    }
+                    .question {
+                        color: $bgr-footer;
+                        margin-bottom: 20px;
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 14px;
+                            height: 2px;
+                            background: black;
+                            right: 10px;
+                            top: 45%;
+                            transform: rotate(180deg);
+                        }
+                    }
+                    .answer {
+                        color: $sub-title-item;
+                    }
+                }
             }
         }
     }
-}
-
-.show {
-    display: block !important;
 }

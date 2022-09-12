@@ -335,19 +335,70 @@
   margin-bottom: 12px;
   padding: 1rem;
   border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
 }
 .FAQ .FAQ-block .content .FAQ-list .item .question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   color: white;
+}
+.FAQ .FAQ-block .content .FAQ-list .item .question::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: white;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.FAQ .FAQ-block .content .FAQ-list .item .question::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: white;
+  right: 10px;
+  top: 45%;
+  transform: rotate(90deg);
 }
 .FAQ .FAQ-block .content .FAQ-list .item .answer {
   display: none;
 }
-
-.show {
-  display: block !important;
+.FAQ .FAQ-block .content .FAQ-list .show {
+  margin: 2px 2px 20px 2px;
+  border-radius: 15px;
+  position: relative;
+  background-clip: padding-box;
+  border: 2px solid linear-gradient(to right, #FF6800, #FF1F00);
+  background: white;
+}
+.FAQ .FAQ-block .content .FAQ-list .show::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background-image: linear-gradient(to right, #FF6800, #FF1F00);
+}
+.FAQ .FAQ-block .content .FAQ-list .show .question {
+  color: #333333;
+  margin-bottom: 20px;
+}
+.FAQ .FAQ-block .content .FAQ-list .show .question::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: black;
+  right: 10px;
+  top: 45%;
+  transform: rotate(180deg);
+}
+.FAQ .FAQ-block .content .FAQ-list .show .answer {
+  color: #808080;
 }
 
 .action {
