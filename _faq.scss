@@ -25,10 +25,30 @@
                 font-size: 14px;
                 color: $sub-title-skill-bars;
                 max-width: 480px;
-                margin-bottom: 2rem;
+                margin-bottom: 20px;
             }
             .FAQ-list {
+                .item {
+                    max-width: 480px;
+                    background: $linear-gradient-color;
+                    margin-bottom: 12px;
+                    padding: 1rem;
+                    border-radius: 15px;
+                    .question {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        color: $white;
+                    }
+                    .answer {
+                        display: none;
+                    }
+                }
             }
         }
     }
+}
+
+.show {
+    display: block !important;
 }

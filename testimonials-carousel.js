@@ -4,5 +4,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
     });
 });

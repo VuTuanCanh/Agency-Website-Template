@@ -116,16 +116,13 @@
 
 .video-player {
   position: relative;
+  background-image: url(./assets/fake-video.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 633px;
 }
-.video-player .fake-video {
-  position: relative;
-  z-index: 1;
-}
-.video-player .fake-video img {
-  width: 100%;
-  height: 100%;
-}
-.video-player .fake-video::after {
+.video-player::after {
   content: "";
   position: absolute;
   top: 0;
@@ -330,8 +327,29 @@
   font-size: 14px;
   color: #CCCCCC;
   max-width: 480px;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
+.FAQ .FAQ-block .content .FAQ-list .item {
+  max-width: 480px;
+  background: linear-gradient(to right, #FF6800, #FF1F00);
+  margin-bottom: 12px;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.FAQ .FAQ-block .content .FAQ-list .item .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.FAQ .FAQ-block .content .FAQ-list .item .answer {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 .action {
   position: relative;
   background-image: url(./assets/Call-to-Action.png);
