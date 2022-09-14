@@ -1,8 +1,6 @@
 var item = document.querySelectorAll('.FAQ-list .item');
 
 
-console.log(item);
-
 item.forEach(element => {
     element.addEventListener('click', () => {
         var childrenShow = element.children[1];
