@@ -392,25 +392,14 @@
   position: relative;
   color: white;
 }
-.FAQ .FAQ-block .content .FAQ-list .item .question::before {
-  position: absolute;
-  content: "";
-  width: 14px;
-  height: 2px;
-  background: white;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .FAQ .FAQ-block .content .FAQ-list .item .question::after {
   position: absolute;
-  content: "";
-  width: 14px;
-  height: 2px;
-  background: white;
-  right: 10px;
-  top: 45%;
-  transform: rotate(90deg);
+  content: "+";
+  color: white;
+  right: 5px;
+  font-size: 30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .FAQ .FAQ-block .content .FAQ-list .item .answer {
   display: none;
@@ -438,13 +427,12 @@
 }
 .FAQ .FAQ-block .content .FAQ-list .show .question::after {
   position: absolute;
-  content: "";
-  width: 14px;
-  height: 2px;
-  background: black;
-  right: 10px;
-  top: 45%;
-  transform: rotate(180deg);
+  content: "-";
+  color: black;
+  right: 5px;
+  font-size: 30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .FAQ .FAQ-block .content .FAQ-list .show .answer {
   color: #808080;

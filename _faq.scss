@@ -40,25 +40,14 @@
                     .question {
                         position: relative;
                         color: $white;
-                        &::before {
-                            position: absolute;
-                            content: "";
-                            width: 14px;
-                            height: 2px;
-                            background: $white;
-                            right: 10px;
-                            top: 50%;
-                            transform: translateY(-50%);
-                        }
                         &::after {
                             position: absolute;
-                            content: "";
-                            width: 14px;
-                            height: 2px;
-                            background: $white;
-                            right: 10px;
-                            top: 45%;
-                            transform: rotate(90deg);
+                            content: "+";
+                            color: $white;
+                            right: 5px;
+                            font-size: 30px;
+                            top: 50%;
+                            transform: translateY(-50%);
                         }
                     }
                     .answer {
@@ -72,7 +61,6 @@
                     background-clip: padding-box;
                     border: 2px solid $linear-gradient-color;
                     background: $white;
-
                     &::before {
                         content: "";
                         position: absolute;
@@ -87,13 +75,12 @@
                         margin-bottom: 20px;
                         &::after {
                             position: absolute;
-                            content: "";
-                            width: 14px;
-                            height: 2px;
-                            background: black;
-                            right: 10px;
-                            top: 45%;
-                            transform: rotate(180deg);
+                            content: "-";
+                            color: black;
+                            right: 5px;
+                            font-size: 30px;
+                            top: 50%;
+                            transform: translateY(-50%);
                         }
                     }
                     .answer {
