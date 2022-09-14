@@ -273,30 +273,79 @@
   height: 8px;
   border-radius: 10px;
   background: white;
+  -webkit-animation: skill 5s infinite;
+          animation: skill 5s infinite;
 }
-.skill-bars .skill-bars-block .content .bar-list .item .chart .chart1 {
-  position: absolute;
-  left: 0;
-  width: 75%;
-  height: 100%;
-  background: linear-gradient(to right, #FF6800, #FF1F00);
-  border-radius: 10px;
-}
-.skill-bars .skill-bars-block .content .bar-list .item .chart .chart2 {
-  position: absolute;
-  left: 0;
-  width: 90%;
-  height: 100%;
-  background: linear-gradient(to right, #FF6800, #FF1F00);
-  border-radius: 10px;
-}
+.skill-bars .skill-bars-block .content .bar-list .item .chart .chart1,
+.skill-bars .skill-bars-block .content .bar-list .item .chart .chart2,
 .skill-bars .skill-bars-block .content .bar-list .item .chart .chart3 {
   position: absolute;
-  left: 0;
-  width: 50%;
   height: 100%;
   background: linear-gradient(to right, #FF6800, #FF1F00);
   border-radius: 10px;
+}
+.skill-bars .skill-bars-block .content .bar-list .item .chart .chart1 {
+  width: 75%;
+  -webkit-animation: chart1 5s ease-in-out;
+          animation: chart1 5s ease-in-out;
+}
+.skill-bars .skill-bars-block .content .bar-list .item .chart .chart2 {
+  width: 90%;
+  -webkit-animation: chart2 5s ease-in-out;
+          animation: chart2 5s ease-in-out;
+}
+.skill-bars .skill-bars-block .content .bar-list .item .chart .chart3 {
+  width: 50%;
+  -webkit-animation: chart3 5s ease-in-out;
+          animation: chart3 5s ease-in-out;
+}
+@-webkit-keyframes chart1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes chart1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+@-webkit-keyframes chart2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes chart2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@-webkit-keyframes chart3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes chart3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
 }
 
 .FAQ .FAQ-block {

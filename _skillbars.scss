@@ -45,29 +45,50 @@
                         height: 8px;
                         border-radius: 10px;
                         background: $white;
-                        .chart1 {
-                            position: absolute;
-                            left: 0;
-                            width: 75%;
-                            height: 100%;
-                            background: $linear-gradient-color;
-                            border-radius: 10px;
-                        }
-                        .chart2 {
-                            position: absolute;
-                            left: 0;
-                            width: 90%;
-                            height: 100%;
-                            background: $linear-gradient-color;
-                            border-radius: 10px;
-                        }
+                        animation: skill 5s infinite;
+                        .chart1,
+                        .chart2,
                         .chart3 {
                             position: absolute;
-                            left: 0;
-                            width: 50%;
                             height: 100%;
                             background: $linear-gradient-color;
                             border-radius: 10px;
+                        }
+                        .chart1 {
+                            width: 75%;
+                            animation: chart1 5s ease-in-out;
+                        }
+                        .chart2 {
+                            width: 90%;
+                            animation: chart2 5s ease-in-out;
+                        }
+                        .chart3 {
+                            width: 50%;
+                            animation: chart3 5s ease-in-out;
+                        }
+                        @keyframes chart1 {
+                            from {
+                                width: 0%;
+                            }
+                            to {
+                                width: 75%;
+                            }
+                        }
+                        @keyframes chart2 {
+                            from {
+                                width: 0%;
+                            }
+                            to {
+                                width: 90%;
+                            }
+                        }
+                        @keyframes chart3 {
+                            from {
+                                width: 0%;
+                            }
+                            to {
+                                width: 50%;
+                            }
                         }
                     }
                 }
