@@ -543,8 +543,169 @@ body {
   color: transparent;
 }
 
+@media only screen and (max-width: 320px) {
+  .hero {
+    padding: 1.5rem;
+    height: none;
+  }
+  .hero .banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero .banner .slogan {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .hero .banner .slogan__btn {
+    margin: 0 auto;
+  }
+  .hero .banner .mask-group {
+    width: 100%;
+  }
+  .feature {
+    margin: 3.6rem 2rem;
+  }
+  .feature .item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature .item-list .item {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+  .video-player {
+    height: 360px;
+  }
+  .testimonials {
+    margin: 3.6rem 0.5rem;
+  }
+  .testimonials .qoute-list .item {
+    padding: 2.5rem;
+    margin: 20px;
+  }
+  .skill-bars .skill-bars-block {
+    flex-direction: column;
+  }
+  .skill-bars .skill-bars-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .skill-bars .skill-bars-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .skill-bars .skill-bars-block .content .bar-list .completion-progress {
+    text-align: start;
+  }
+  .FAQ .FAQ-block {
+    flex-direction: column;
+  }
+  .FAQ .FAQ-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .FAQ .FAQ-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .FAQ .FAQ-block .content .FAQ-list .item .question::after {
+    right: -1rem;
+  }
+  .FAQ .FAQ-block .content .FAQ-list .show .question::after {
+    right: -1rem;
+  }
+  .action .content {
+    width: 90%;
+  }
+}
+/* mobile */
+@media (min-width: 321px) and (max-width: 480px) {
+  .hero {
+    padding: 1.5rem;
+    height: none;
+  }
+  .hero .banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero .banner .slogan {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .hero .banner .slogan__btn {
+    margin: 0 auto;
+  }
+  .hero .banner .mask-group {
+    width: 100%;
+  }
+  .feature {
+    margin: 3.6rem 2rem;
+  }
+  .feature .item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature .item-list .item {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+  .video-player {
+    height: 360px;
+  }
+  .testimonials {
+    margin: 3.6rem 0.5rem;
+  }
+  .testimonials .qoute-list .item {
+    padding: 2.5rem;
+    margin: 20px;
+  }
+  .skill-bars .skill-bars-block {
+    flex-direction: column;
+  }
+  .skill-bars .skill-bars-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .skill-bars .skill-bars-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .skill-bars .skill-bars-block .content .bar-list .completion-progress {
+    text-align: start;
+  }
+  .FAQ .FAQ-block {
+    flex-direction: column;
+  }
+  .FAQ .FAQ-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .FAQ .FAQ-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .FAQ .FAQ-block .content .FAQ-list .item .question::after {
+    right: -1rem;
+  }
+  .FAQ .FAQ-block .content .FAQ-list .show .question::after {
+    right: -1rem;
+  }
+  .action .content {
+    width: 90%;
+  }
+}
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (min-width: 481px) and (max-width: 600px) {
   .hero {
     padding: 1.5rem;
     height: none;
