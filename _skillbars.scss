@@ -32,7 +32,8 @@
             }
             .bar-list {
                 .item {
-                    margin-bottom: 1rem;
+                    margin: 1rem auto;
+                    max-width: 380px;
                     .completion-progress {
                         font-size: 14px;
                         font-weight: 400;
@@ -41,7 +42,6 @@
                     }
                     .chart {
                         position: relative;
-                        max-width: 380px;
                         height: 8px;
                         border-radius: 10px;
                         background: $white;
@@ -53,6 +53,7 @@
                             height: 100%;
                             background: $linear-gradient-color;
                             border-radius: 10px;
+                            left: 0;
                         }
                         .chart1 {
                             width: 75%;

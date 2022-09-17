@@ -64,6 +64,12 @@
           background-clip: text;
   color: transparent;
 }
+.hero .banner .mask-group {
+  width: 50%;
+}
+.hero .banner .mask-group img {
+  width: 100%;
+}
 
 .feature {
   margin: 3.6rem 6rem;
@@ -259,7 +265,8 @@
   margin-bottom: 2rem;
 }
 .skill-bars .skill-bars-block .content .bar-list .item {
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+  max-width: 380px;
 }
 .skill-bars .skill-bars-block .content .bar-list .item .completion-progress {
   font-size: 14px;
@@ -269,7 +276,6 @@
 }
 .skill-bars .skill-bars-block .content .bar-list .item .chart {
   position: relative;
-  max-width: 380px;
   height: 8px;
   border-radius: 10px;
   background: white;
@@ -283,6 +289,7 @@
   height: 100%;
   background: linear-gradient(to right, #FF6800, #FF1F00);
   border-radius: 10px;
+  left: 0;
 }
 .skill-bars .skill-bars-block .content .bar-list .item .chart .chart1 {
   width: 75%;
@@ -396,7 +403,7 @@
   position: absolute;
   content: "+";
   color: white;
-  right: 5px;
+  right: 0;
   font-size: 30px;
   top: 50%;
   transform: translateY(-50%);
@@ -429,7 +436,7 @@
   position: absolute;
   content: "-";
   color: black;
-  right: 5px;
+  right: 0;
   font-size: 30px;
   top: 50%;
   transform: translateY(-50%);
@@ -534,4 +541,235 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding: 1.5rem;
+    height: none;
+  }
+  .hero .banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero .banner .slogan {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .hero .banner .slogan__btn {
+    margin: 0 auto;
+  }
+  .hero .banner .mask-group {
+    width: 100%;
+  }
+  .feature {
+    margin: 3.6rem 2rem;
+  }
+  .feature .item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature .item-list .item {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 60%;
+  }
+  .video-player {
+    height: 360px;
+  }
+  .testimonials .qoute-list .item {
+    padding: 2.5rem;
+    margin: 20px;
+  }
+  .skill-bars .skill-bars-block {
+    flex-direction: column;
+  }
+  .skill-bars .skill-bars-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .skill-bars .skill-bars-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .skill-bars .skill-bars-block .content .bar-list .completion-progress {
+    text-align: start;
+  }
+  .FAQ .FAQ-block {
+    flex-direction: column;
+  }
+  .FAQ .FAQ-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .FAQ .FAQ-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .action .content {
+    width: 90%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .hero {
+    padding: 1.5rem;
+    height: none;
+  }
+  .hero .banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero .banner .slogan {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .hero .banner .slogan__btn {
+    margin: 0 auto;
+  }
+  .hero .banner .mask-group {
+    width: 100%;
+  }
+  .feature {
+    margin: 3.6rem 2rem;
+  }
+  .feature .item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature .item-list .item {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+  .video-player {
+    height: 360px;
+  }
+  .testimonials .qoute-list .item {
+    padding: 2.5rem;
+    margin: 20px;
+  }
+  .skill-bars .skill-bars-block {
+    flex-direction: column;
+  }
+  .skill-bars .skill-bars-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .skill-bars .skill-bars-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .skill-bars .skill-bars-block .content .desc {
+    margin: 0 auto 2rem auto;
+  }
+  .skill-bars .skill-bars-block .content .bar-list .completion-progress {
+    text-align: start;
+  }
+  .FAQ .FAQ-block {
+    flex-direction: column;
+  }
+  .FAQ .FAQ-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .FAQ .FAQ-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .FAQ .FAQ-block .content .desc {
+    margin: 0 auto 20px auto;
+  }
+  .FAQ .FAQ-block .content .FAQ-list .item {
+    margin: 0 auto 12px auto;
+  }
+  .action .content {
+    width: 90%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 991px) {
+  .hero {
+    padding: 1.5rem;
+    height: none;
+  }
+  .hero .banner .slogan {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .hero .banner .slogan__btn {
+    margin: 0 auto;
+  }
+  .hero .banner .mask-group {
+    width: 100%;
+  }
+  .feature {
+    margin: 3.6rem 2rem;
+  }
+  .feature .item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature .item-list .item {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+  .video-player {
+    height: 360px;
+  }
+  .testimonials .qoute-list .item {
+    padding: 2.5rem;
+    margin: 20px;
+  }
+  .skill-bars .skill-bars-block {
+    flex-direction: column;
+  }
+  .skill-bars .skill-bars-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .skill-bars .skill-bars-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .skill-bars .skill-bars-block .content .desc {
+    margin: 0 auto 2rem auto;
+  }
+  .skill-bars .skill-bars-block .content .bar-list .completion-progress {
+    text-align: start;
+  }
+  .FAQ .FAQ-block {
+    flex-direction: column;
+  }
+  .FAQ .FAQ-block .banner {
+    order: 2;
+    width: 100%;
+  }
+  .FAQ .FAQ-block .content {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .FAQ .FAQ-block .content .desc {
+    margin: 0 auto 20px auto;
+  }
+  .FAQ .FAQ-block .content .FAQ-list .item {
+    margin: 0 auto 12px auto;
+  }
+  .action .content {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
